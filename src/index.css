@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #446900;
+  --color-primary-container: #81b532;
+  --color-primary-fixed: #bbf46a;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #294200;
+  
+  --color-secondary: #4d6265;
+  --color-secondary-container: #cde4e7;
+  --color-on-secondary-container: #51666a;
+  
+  --color-background: #edfcff;
+  --color-on-background: #0e1e21;
+  
+  --color-surface: #edfcff;
+  --color-on-surface: #0e1e21;
+  --color-on-surface-variant: #434938;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e5f7fa;
+  --color-surface-container: #dff1f4;
+  --color-surface-container-high: #d9ebef;
+  --color-surface-container-highest: #d4e6e9;
+  
+  --color-outline: #737a66;
+  --color-outline-variant: #c3c9b3;
+  
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+}
+
+/* Custom scrollbar and glassmorphism helpers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid #E1E8E9;
+}
+
+body {
+  font-family: var(--font-sans);
+}
